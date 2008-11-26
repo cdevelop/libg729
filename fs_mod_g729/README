@@ -1,0 +1,12 @@
+Although the libg729 is made to be compatible with FS, you still need to change a few line or you will get memory leak.
+
+
+1) replace $FS/src/mod/codec/mod_g729/mod_g729.c with this version
+2) check out libg729
+3) copy libg729.a to  $FS/libs/libg729/.libs/
+4) copy libg729.h to  $FS/src/include/
+
+make mod_g729
+sudo make mod_g729-install
+ 
+Restart FreeSWITCH and try to make a call with g729............

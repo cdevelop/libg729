@@ -1,0 +1,14 @@
+The original EasyG729A lib is created from C++, which means you cannot call functions directly in C.
+
+I made a wrapper, so can easily call in C, also I changed the API, compatible with Freeswitch mod_g729
+
+EasyG729A is made by http://imtelephone.com/. I can't include the library here due to the copyright issue. But you can get a free version for research from their site.
+
+To build:
+copy EasyG729A.h and EasyG729A.a to the code base.
+
+# make
+# make lib
+
+Your can try to compile into FreeSWITCH, follow the instruction in fs_mod_g729.
+
